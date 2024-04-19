@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0228)https://xcdn.php.cn/js/tupian/%E5%8F%AF%E6%8B%96%E6%8B%BD%E6%97%8B%E8%BD%AC%E7%9A%84%E7%82%AB%E9%85%B7jQuery%203D%E5%9B%BE%E7%89%87%E5%A2%99%E7%89%B9%E6%95%88/index.html?sign=6bc08fa5f7e76beb29a48ea57050bb0d&timestamp=1712731429 -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>可拖拽旋转的炫酷jQuery 3D图片墙特效</title>
+
+<style type="text/css">
+	*{margin:0;padding: 0;}
+	.pic{
+		width: 120px;
+		height: 180px;
+		margin: 150px auto 0;
+		position: relative;
+		/*transform 旋转元素*/
+		transform-style:preserve-3d;
+		transform:perspective(800px) rotateX(-10deg) rotateY(0deg);
+	}
+	body{background-color: #66677c;}
+
+	.pic img{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 5px;
+		box-shadow: 0px 0px 10px #fff;
+		/*倒影的设置*/
+		-webkit-box-reflect:below 10px -webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,.5) 100%);
+	}
+	.pic p{
+		width: 1200px;
+		height: 1200px;
+		background: -webkit-radial-gradient(center center,600px 600px,rgba(255,255,255,.5),rgba(0,0,0,0));
+		position: absolute;
+		top:100%;left:50%;
+		margin-top: -600px;
+		margin-left: -600px;
+		border-radius:600px;
+		transform:rotateX(90deg);
+	}
+</style>
+
+<style>/* Copyright (C) Microsoft Corporation. All rights reserved. */
+
+.msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+    background: #ffff00 !important;
+    color: black !important;
+}
+
+.msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+    background: #b2d6f3 !important;
+    color: black !important;
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+        -ms-high-contrast-adjust: none;
+        background-color: Highlight !important;
+        color: HighlightText !important;
+    }
+
+    .msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+        -ms-high-contrast-adjust: none;
+        background: yellow !important;
+        color: black !important;
+    }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uLy4uLy4uL2Nzcy9yZWFkX291dF9sb3VkX3dlYi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsOERBQThEOztBQUU5RDtJQUNJLDhCQUE4QjtJQUM5Qix1QkFBdUI7QUFDM0I7O0FBRUE7SUFDSSw4QkFBOEI7SUFDOUIsdUJBQXVCO0FBQzNCOztBQUVBO0lBQ0k7UUFDSSw4QkFBOEI7UUFDOUIsc0NBQXNDO1FBQ3RDLCtCQUErQjtJQUNuQzs7SUFFQTtRQUNJLDhCQUE4QjtRQUM5Qiw2QkFBNkI7UUFDN0IsdUJBQXVCO0lBQzNCO0FBQ0oiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBDb3B5cmlnaHQgKEMpIE1pY3Jvc29mdCBDb3Jwb3JhdGlvbi4gQWxsIHJpZ2h0cyByZXNlcnZlZC4gKi9cclxuXHJcbi5tc3JlYWRvdXQtd29yZC1oaWdobGlnaHQ6bm90KC5tc3JlYWRvdXQtaW5hY3RpdmUtaGlnaGxpZ2h0KSB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmZmZjAwICFpbXBvcnRhbnQ7XHJcbiAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcclxufVxyXG5cclxuLm1zcmVhZG91dC1saW5lLWhpZ2hsaWdodDpub3QoLm1zcmVhZG91dC1pbmFjdGl2ZS1oaWdobGlnaHQpIHtcclxuICAgIGJhY2tncm91bmQ6ICNiMmQ2ZjMgIWltcG9ydGFudDtcclxuICAgIGNvbG9yOiBibGFjayAhaW1wb3J0YW50O1xyXG59XHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAoLW1zLWhpZ2gtY29udHJhc3Q6IGFjdGl2ZSkge1xyXG4gICAgLm1zcmVhZG91dC13b3JkLWhpZ2hsaWdodDpub3QoLm1zcmVhZG91dC1pbmFjdGl2ZS1oaWdobGlnaHQpIHtcclxuICAgICAgICAtbXMtaGlnaC1jb250cmFzdC1hZGp1c3Q6IG5vbmU7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogSGlnaGxpZ2h0ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgY29sb3I6IEhpZ2hsaWdodFRleHQgIWltcG9ydGFudDtcclxuICAgIH1cclxuXHJcbiAgICAubXNyZWFkb3V0LWxpbmUtaGlnaGxpZ2h0Om5vdCgubXNyZWFkb3V0LWluYWN0aXZlLWhpZ2hsaWdodCkge1xyXG4gICAgICAgIC1tcy1oaWdoLWNvbnRyYXN0LWFkanVzdDogbm9uZTtcclxuICAgICAgICBiYWNrZ3JvdW5kOiB5ZWxsb3cgIWltcG9ydGFudDtcclxuICAgICAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcclxuICAgIH1cclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+<body><script src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/googlegg.js.下载"></script>
+
+<div class="pic" style="transform: perspective(800px) rotateX(1.29222deg) rotateY(-169.794deg);">
+	<img src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/1.jpg" ondragstart="return false" style="transform: rotateY(0deg) translateZ(300px);">
+	<img src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/2.jpg" ondragstart="return false" style="transform: rotateY(36deg) translateZ(300px);">
+	<img src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/3.jpg" ondragstart="return false" style="transform: rotateY(72deg) translateZ(300px);">
+	<img src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/4.jpg" ondragstart="return false" style="transform: rotateY(108deg) translateZ(300px);">
+	<img src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/5.jpg" ondragstart="return false" style="transform: rotateY(144deg) translateZ(300px);">
+	<img src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/6.jpg" ondragstart="return false" style="transform: rotateY(180deg) translateZ(300px);">
+	<img src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/7.jpg" ondragstart="return false" style="transform: rotateY(216deg) translateZ(300px);">
+	<img src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/8.jpg" ondragstart="return false" style="transform: rotateY(252deg) translateZ(300px);">
+	<img src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/9.jpg" ondragstart="return false" style="transform: rotateY(288deg) translateZ(300px);">
+	<img src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/10.jpg" ondragstart="return false" style="transform: rotateY(324deg) translateZ(300px);">
+	<p></p>
+</div>
+
+<script src="./可拖拽旋转的炫酷jQuery 3D图片墙特效_files/jquery-1.11.0.min.js.下载" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+
+var imgL=$(".pic img").size();
+var deg=360/imgL;
+var roY=0,roX=-10;
+ var xN=0,yN=0;
+ var play=null;
+
+$(".pic img").each(function(i){
+	$(this).css({
+		<!--translateZ 定义2d旋转沿着z轴-->
+		"transform":"rotateY("+i*deg+"deg) translateZ(300px)"	});
+		<!--防止图片被拖拽-->
+		$(this).attr('ondragstart','return false');
+	});
+
+	$(document).mousedown(function(ev){
+	var x_=ev.clientX;
+	var y_=ev.clientY;
+	clearInterval(play);
+		console.log('我按下了');
+		$(this).bind('mousemove',function(ev){
+			/*获取当前鼠标的坐标*/
+			var x=ev.clientX;
+			var y=ev.clientY;
+			/*两次坐标之间的距离*/
+			  xN=x-x_;
+			  yN=y-y_;
+
+			 roY+=xN*0.2;
+			roX-=yN*0.1;
+			console.log('移动');
+			//$('body').append('<div style="width:5px;height:5px;position:absolute;top:'+y+'px;left:'+x+'px;background-color:red"></div>');
+
+			$('.pic').css({
+				 transform:'perspective(800px) rotateX('+roX+'deg) rotateY('+roY+'deg)'
+			});
+			/*之前的鼠标坐标*/
+		 x_=ev.clientX;
+		 y_=ev.clientY;
+
+		});
+	}).mouseup(function(){
+		  $(this).unbind('mousemove');
+		  var play=setInterval(function(){
+		   
+		   xN*=0.95;
+		   yN*=0.95
+		   if(Math.abs(xN)<1 && Math.abs(yN)<1){
+			  clearInterval(play);
+		   }
+			roY+=xN*0.2;
+			roX-=yN*0.1;
+			$('.pic').css({
+				 transform:'perspective(800px) rotateX('+roX+'deg) rotateY('+roY+'deg)'
+			});
+
+		  },30);
+
+	});
+
+});
+</script>
+
+
+</body></html>

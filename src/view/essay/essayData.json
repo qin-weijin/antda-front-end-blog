@@ -1,0 +1,211 @@
+{
+  "Basis": [
+    {
+      "title": "HTML",
+      "description": "整理了 HTML5 新特性，包括：自定义标签、Storage API、语义化标签。",
+      "href": "https://qin-weijin.github.io/development-notes/basis/html"
+    },
+    {
+      "title": "CSS Properties",
+      "description": "整理了 CSS 常用属性，包括：Display、Position、Box、Font、Text、Table、List、Transition。",
+      "href": "https://qin-weijin.github.io/development-notes/basis/css-properties"
+    },
+    {
+      "title": "CSS Layout",
+      "description": "整理了 CSS Flex 定位。",
+      "href": "https://qin-weijin.github.io/development-notes/basis/css-layout"
+    },
+    {
+      "title": "CSS Zoom Table",
+      "description": "整理了 CSS 速查表，包括：选择器、伪元素、伪类、函数、数据类型、at-rules。",
+      "href": "https://qin-weijin.github.io/development-notes/basis/css-zoom"
+    },
+    {
+      "title": "CSS About",
+      "description": "整理了包括：元素居中、模块化、性能优化。",
+      "href": "https://qin-weijin.github.io/development-notes/basis/css-about"
+    },
+    {
+      "title": "Style",
+      "description": "整理了 SASS、SCSS、Stylus 基本用法。",
+      "href": "https://qin-weijin.github.io/development-notes/basis/sass-stylus"
+    },
+    {
+      "title": "Javascript",
+      "description": "...敬请期待。",
+      "href": ""
+    }
+  ],
+  "Vue": [
+    {
+      "title": "Vue",
+      "description": "Vue 响应式原理与声明式语法。",
+      "href": "https://qin-weijin.github.io/development-notes/vue/basis"
+    },    
+    {
+      "title": "SFC",
+      "description": "整理了单文件组件 SFC API.",
+      "href": "https://qin-weijin.github.io/development-notes/vue/single-file-component"
+    },    
+    {
+      "title": "Vue Router",
+      "description": "整理了 Vue Router API.",
+      "href": "https://qin-weijin.github.io/development-notes/vue/vue-router-api"
+    },    
+    {
+      "title": "Vue Router Guards",
+      "description": "整理了 Vue Router Guards 导航守卫。",
+      "href": "https://qin-weijin.github.io/development-notes/vue/vue-router-guards"
+    },    
+    {
+      "title": "状态管理",
+      "description": "整理了 Pinia or Vuex 状态管理 API.",
+      "href": "https://qin-weijin.github.io/development-notes/vue/pinia-vuex"
+    },    
+    {
+      "title": "Global API",
+      "description": "整理了 Vue Global API",
+      "href": "https://qin-weijin.github.io/development-notes/vue/Global-API"
+    },    
+    {
+      "title": "Built ins",
+      "description": "整理了 Vue Built ins 内置内容。",
+      "href": "https://qin-weijin.github.io/development-notes/vue/Built-ins"
+    }
+  ],
+  "Git & GitHub": [
+    {
+      "title": "Introduction",
+      "description": "Git 和 GitHub 简介",
+      "href": "https://qin-weijin.github.io/development-notes/git-github/introduction"
+    },
+    {
+      "title": "GitHub Pages",
+      "description": "将 Vue Vite 项目部署到 GitHub Pages",
+      "href": "https://qin-weijin.github.io/development-notes/git-github/deploy-gitHub-pages"
+    }
+  ], 
+  "Utils": [
+    {
+      "title": "Vite",
+      "description": "整理了 Vite 基本用法。",
+      "href": ""
+    },
+    {
+      "title": "Axios",
+      "description": "整理了 Axios 基本用法。",
+      "href": ""
+    },
+    {
+      "title": "Mockjs",
+      "description": "整理了 Mockjs & vite-plugin-mock 基本用法。",
+      "href": ""
+    },
+    {
+      "title": "Axure",
+      "description": "整理了 Axure PRD 产品需求文档基本用法。",
+      "href": ""
+    },
+    {
+      "title": "Swiper",
+      "description": "整理了 Swiper 轮播图组件库基本用法。",
+      "href": ""
+    },
+    {
+      "title": "VideoJS",
+      "description": "整理了 VideoJS 富媒体组件库基本用法。",
+      "href": ""
+    },
+    {
+      "title": "markedJS",
+      "description": "整理了 markedJS 基本用法。",
+      "href": ""
+    },
+    {
+      "title": "VueMarkdown",
+      "description": "整理了 VueMarkdown 基本用法。",
+      "href": ""
+    },
+    {
+      "title": "swagger",
+      "description": "整理了 swagger RestAPI",
+      "href": ""
+    }
+  ],
+  "Node": [
+    {
+      "title": "Node API",
+      "description": "整理了 Node API 基本用法。",
+      "href": ""
+    },
+    {
+      "title": "NPM",
+      "description": "整理了 NPM 包管理系统基本用法。",
+      "href": ""
+    },    
+    {
+      "title": "Webpack",
+      "description": "整理了 Webpack JS 静态模块打包工具基本用法。",
+      "href": ""
+    },    
+    {
+      "title": "node_cache 查询机制",
+      "description": "About `./node_cache` 查询和安装机制",
+      "href": ""
+    },    
+    {
+      "title": "highlightjs",
+      "description": "整理了 highlightjs 代码高亮基本用法。",
+      "href": ""
+    },
+    {
+      "title": "Http Server",
+      "description": "整理了 http-server 基本用法。",
+      "href": ""
+    },    
+    {
+      "title": "Express",
+      "description": "整理了 express 基本用法。",
+      "href": ""
+    }    
+  ],
+  "UI Library": [
+    {
+      "title": "Vuetify",
+      "description": "整理了 Vuetify 基本用法。",
+      "href": ""
+    },    
+    {
+      "title": "Ant Design",
+      "description": "整理了 Ant Design 基本用法。",
+      "href": ""
+    },
+    {
+      "title": "Element UI",
+      "description": "整理了 Element UI 基本用法。",
+      "href": ""
+    },
+    {
+      "title": "Vant",
+      "description": "整理了 Vant 基本用法。",
+      "href": ""
+    }
+  ],
+  "theory": [
+    {
+      "title": "Modularization",
+      "description": "整理了模块化，包括：ES6、AMD、CommonJS",
+      "href": ""      
+    },
+    {
+      "title": "Design Mode",
+      "description": "整理了设计模式，包括：MVVM、MVC、MVP、MVVM, C/S or B/S",
+      "href": ""      
+    },
+    {
+      "title": "compatibility",
+      "description": "整理了预览器兼容、设备兼容、屏幕分辨率兼容。",
+      "href": ""      
+    }
+  ]
+}

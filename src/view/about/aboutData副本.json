@@ -1,0 +1,31 @@
+{
+  "Skill Stack": [
+    {
+      "title": "前端技术栈",
+      "items": [
+        {
+          "text": "Vue3",
+          "icon": "twitter-outlined",
+          "color": "",
+        },
+      ]      
+    },
+    {
+      "title": "开发工具",
+      "items": []      
+    },
+    {
+      "title": "DevOps",
+      "items": []      
+    },
+    {
+      "title": "后端技术栈",
+      "items": []      
+    },
+    {
+      "title": "其他",
+      "items": []      
+    },
+    
+  ]
+}
